@@ -25,9 +25,9 @@ st.write("Neo4j + Streamlit")
 def get_driver():
 
     return GraphDatabase.driver(
-        st.secrets["neo4j"]["uri"],
+        st.secrets["neo4j"]["neo4j+s://8226a53e.databases.neo4j.io"],
         auth=(
-            st.secrets["neo4j"]["username"],
+            st.secrets["neo4j"]["8226a53e"],
             st.secrets["neo4j"]["password"]
         )
     )
